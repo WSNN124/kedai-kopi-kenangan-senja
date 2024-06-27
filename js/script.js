@@ -60,9 +60,10 @@ itemDetailButtons.forEach((btn) => {
    btn.onclick = (e) => {
         itemDetailModal.style.display = 'flex';
         e.preventDefault();
-    }
+    };
 
-})
+});
+
 
 
 // klik tombol close modal

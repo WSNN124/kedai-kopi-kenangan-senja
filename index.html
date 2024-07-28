@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Kopi Kenangan Senja</title>
+    <title>KLAKSSONJOKI.ID</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,14 +40,14 @@
     <!-- Navbar Start -->
 
     <nav class="navbar" x-data>
-      <a href="#" class="navbar-logo">kenangan<span>senja</span>.</a>
+      <a href="#" class="navbar-logo">klakksonjoki.<span>id</span></a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#products">Produk</a>
-        <a href="#contact">Kontak</a>
+        <a href="#cara">Joki</a>
+        <a href="#products">Harga</a>
+        <a href="#worker">Worker</a>
       </div>
 
       <div class="navbar-extra">
@@ -97,16 +97,24 @@
           <h5>Customer Detail</h5>
 
           <label for="name">
-            <span>Name</span>
+            <span>Nickname</span>
             <input type="text" name="name" id="name">
           </label>
           <label for="email">
             <span>Email</span>
             <input type="email" name="email" id="email">
           </label>
-          <label for="phone">
-            <span>Phone</span>
-            <input type="number" name="phone" id="phone" autocomplete="off">
+          <label for="password">
+            <span>Password</span>
+            <input type="text" name="phone" id="phone" autocomplete="off">
+          </label>
+          <label for="request">
+            <span>Request Hero</span>
+            <input type="text" name="request" id="request" autocomplete="off">
+          </label>
+          <label for="catatan">
+            <span>Catatan untuk penjoki</span>
+            <input type="text" name="catatan" id="catatan" autocomplete="off">
           </label>
 
           <button class="checkout-button disabled" type="submit" id="checkout-button" value="checkout">Checkout</button>
@@ -126,11 +134,8 @@
     <section class="hero" id="home">
       <div class="mask-container">
         <main class="content">
-          <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            voluptatibus!
-          </p>
+          <h1>SERING KETEMU DARK SYSTEM? RANK NGESTUCK TERUS? <span>JOKI DI KLAKSSONJOKI.ID SOLUSINYA!</span></h1>
+          
         </main>
       </div>
     </section>
@@ -144,20 +149,17 @@
 
       <div class="row">
         <div class="about-img">
-          <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+          <img src="img/tentangkami.jpg" alt="Tentang Kami" />
         </div>
 
         <div class="content">
-          <h3>Kenapa memilih kopi kami?</h3>
+          <h3>Kenapa memilih Klakksonjoki?</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            inventore vel accusamus non quaerat repellendus.
-          </p>
+            Selamat datang di toko kami, tempat terbaik untuk meningkatkan pengalaman bermain Mobile Legends Anda! Kami menawarkan jasa joki Mobile Legends yang profesional dan terpercaya. Dengan tim joki berpengalaman dan memiliki skill setara pro player, kami siap membantu Anda mencapai peringkat tertinggi dengan cepat dan aman.
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel
-            blanditiis suscipit aperiam voluptatem aliquid saepe nobis debitis
-            dolore temporibus!
+             Kami menjamin keamanan akun Anda serta hasil yang memuaskan. Selain itu, kami juga menyediakan berbagai paket layanan yang fleksibel sesuai dengan kebutuhan dan anggaran Anda. Jangan lewatkan kesempatan untuk mendominasi medan pertempuran dan raih kemenangan gemilang bersama kami!
+          </p>
           </p>
         </div>
       </div>
@@ -167,45 +169,18 @@
 
     <!-- Menu Section Start -->
 
-    <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
+    <section id="cara" class="menu">
+      <h2><span>Langkah - Langkah</span> Joki</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ipsum,
-        laudantium alias minima perferendis doloribus?
+        Berikut adalah langkah-langkah sederhana untuk Order Jasa Joki : <br>
+
+        1. Lengkapi Data Akun Joki Dengan Teliti (Pastikan data yang Anda masukkan sudah benar dan lengkap) <br>
+        2. Pilih Jenis Variant Joki  (Sesuaikan dengan kebutuhan Anda) <br>
+        3. Masukkan Jumlah Order Sesuai Tujuan Rank (Pastikan jumlah order sesuai dengan rank yang Anda inginkan) <br>
+        4. Klik Order Now & Lakukan Pembayaran (Tunggu konfirmasi dari kami dan orderan Anda akan segera diproses)
       </p>
 
-      <div class="row">
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/menu.jpg" alt="Espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-      </div>
+      
     </section>
 
     <!-- Menu Section End -->
@@ -213,30 +188,19 @@
     <!-- Products Section Start -->
 
     <section class="products" id="products" x-data="products">
-      <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit
-        voluptatum eligendi expedita. Quaerat, ratione!
-      </p>
+      <h2>Pilih <span>Nominal</span> </h2>
+      <h2>
+        Joki Rank / Star
+      </h2>
 
       <div class="row">
         <template x-for="(item,index) in items" x-key="index">
           <div class="product-card">
             <div class="product-icons">
               <a href="#" @click.prevent="$store.cart.add(item)">
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#shopping-cart" />
-                </svg>
+                Order
               </a>
-              <a href="" class="item-detail-button">
+              <!-- <a href="" class="item-detail-button">
                 <svg
                 width="24"
                 height="24"
@@ -247,69 +211,13 @@
                 stroke-linejoin="round"
               >
                 <use href="img/feather-sprite.svg#eye" />
-              </svg></a>
+              </svg></a> -->
             </div>
             <div class="product-image">
               <img :src="`img/products/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-content">
               <h3 x-text="item.name"></h3>
-              <div class="product-stars">
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#star" />
-                </svg>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#star" />
-                </svg>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#star" />
-                </svg>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#star" />
-                </svg>
-                <svg
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <use href="img/feather-sprite.svg#star" />
-                </svg>
               </div>
               <div class="product-price"><span x-text="rupiah(item.price)"></span></div>
             </div>
@@ -322,37 +230,56 @@
 
     <!-- Contact Section Start -->
 
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam,
-        aperiam voluptatum necessitatibus consequuntur quidem.
-      </p>
+    <section id="worker" class="menu">
+      <h2><span>Worker</span></h2>
 
       <div class="row">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249.33108777038916!2d104.44982966109008!3d0.9258692297037755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d97269ce59bce5%3A0x18c8ba3bb0ea87b5!2sHome!5e0!3m2!1sid!2sus!4v1718788055470!5m2!1sid!2sus"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="menu-card">
+          <img src="img/menu/fedrick.jpg" alt="Espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Fedrick -</h3>
+          <p class="menu-card-price">Owner of klakksonjoki.id & Worker</p>
+          <a href="" class="item-detail-button1"> <button>
+            Cari tahu lebih lanjut
+          </button>
+            </a> 
+        </div>
 
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
-          </div>
-          <button type="submit" class="btn">kirim pesan</button>
-        </form>
+        <div class="menu-card">
+          <img src="img/menu/jason.jpg" alt="Espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Jason -</h3>
+          <p class="menu-card-price">Brand ambassador & Worker</p>
+          <a href="" class="item-detail-button2"> <button>
+            Cari tahu lebih lanjut 
+          </button> </a> 
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/valentino.jpg" alt="Espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Valentino -</h3>
+          <p class="menu-card-price">Worker</p>
+          <a href="" class="item-detail-button3"> <button>
+            Cari tahu lebih lanjut
+          </button> </a>
+        </div>
+        
+        <div class="menu-card">
+          <img src="img/menu/sean.jpg" alt="Sean" class="menu-card-image" />
+          <h3 class="menu-card-title">- Sean -</h3>
+          <p class="menu-card-price">Worker</p>
+          <a href="" class="item-detail-button4"> <button>
+            Cari tahu lebih lanjut
+          </button>
+          </a>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/menu/winson.jpg" alt="Espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Winson -</h3>
+          <p class="menu-card-price">Worker</p>
+          <a href="" class="item-detail-button5"> <button>
+            Cari tahu lebih lanjut
+          </button>
+        </div>
+  
       </div>
     </section>
 
@@ -361,7 +288,7 @@
     <!-- Footer Start -->
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="https://www.instagram.com/klakssonjoki.id/"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
       </div>
@@ -369,40 +296,94 @@
       <div class="links">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
+        <a href="#cara">Menu</a>
         <a href="#products">Produk</a>
-        <a href="#contact">Kontak</a>
+        <a href="#worker">Kontak</a>
       </div>
 
       <div class="credit">
-        <p>Created by <a href="">winson</a>. | &copy; 2024.</p>
+        <p>Created by <a href="">WSNN</a>. | &copy; 2024.</p>
       </div>
     </footer>
     <!-- Footer End -->
 
     <!-- Modal Box Item Detail start -->
-    <div class="modal" id="item-detail-modal">
+    <div class="modal" id="item-detail-modal1">
       <div class="modal-container">
         <a href="" class="close-icon"><i data-feather="x"></i></a>
         <div class="modal-content">
-          <img src="img/products/1.jpg" alt="Product 1" />
+          <img src="img/menu/fedrick.jpg" alt="Fedrick" class="orang"/>
           <div class="product-content">
-            <h3>Product 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
-              in numquam quos nesciunt nisi rerum.
-            </p>
-            <div class="product-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-            <a href="#"
-              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
-            >
+            <h3>Fedrick Larsson <br>
+            Nickname : Hae Jun Woo <br>
+            Highest Rank : 222 <i data-feather="star"></i></h3>
+            
+        <img src="img/menu/fedrick (2).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal2">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/jason.jpg" alt="Jason" class="orang"/>
+          <div class="product-content">
+            <h3>Jason Wen <br>
+            Nickname : [RRQ]@fedrick010806$ <br>
+            Highest Rank : 138<i data-feather="star"></i> </h3>
+            
+        <img src="img/menu/jason (2).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal3">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/valentino.jpg" alt="Valentino" class="orang"/>
+          <div class="product-content">
+            <h3>Valentino Kiong <br>
+            Nickname : 周也的男朋友 <br>
+            Highest Rank : 164 <i data-feather="star"></i></h3>
+            
+        <img src="img/menu/valentino (2).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal4">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/sean.jpg" alt="Sean" class="orang"/>
+          <div class="product-content">
+            <h3>Sean Lim <br>
+            Nickname : Kneegerina <br>
+            Highest Rank : 206 <i data-feather="star"></i></h3>
+            
+        <img src="img/menu/sean (2).jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal5">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/menu/winson.jpg" alt="Winson"  class="orang"/>
+          <div class="product-content">
+            <h3>Winson <br>
+            Nickname : WSNN<br>
+            Highest Rank : 190 <i data-feather="star"></i></h3>
+
+            <img src="img/menu/winson (2)jpg.jpg" alt="">
+        
           </div>
         </div>
       </div>

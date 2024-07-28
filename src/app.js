@@ -1,11 +1,15 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     items: [
-      { id: 1, name: "Robusta Brazil", img: "1.jpg", price: 20000 },
-      { id: 2, name: "Arabica Blend", img: "2.jpg", price: 25000 },
-      { id: 3, name: "Primo Passo", img: "3.jpg", price: 30000 },
-      { id: 4, name: "Aceh Gayo", img: "4.jpg", price: 35000 },
-      { id: 5, name: "Sumatra Mandheling", img: "5.jpg", price: 40000 },
+      { id: 1, name: "Master / Star", img: "logomaster.png", price: 3000 },
+      { id: 2, name: "Grandmaster / Star", img: "logogm.png", price: 4000 },
+      { id: 3, name: "Epic / Star", img: "logoepic.png", price: 6000 },
+      { id: 4, name: "Legend / Star", img: "logolegend.png", price: 7000 },
+      { id: 5, name: "Mythic / Star", img: "logomythic.png", price: 15000 },
+      { id: 6, name: "Mythic Honor / Star", img: "logohonor.png", price: 20000 },
+      { id: 7, name: "Mythic Glory / Star", img: "logoglory.png", price: 25000 },
+      { id: 8, name: "Mythic Immortal / Star", img: "logoimmortal.png", price: 30000 },
+      
     ],
   }));
 
@@ -97,8 +101,8 @@ checkoutButton.addEventListener("click", async function (e) {
 
   const data = new URLSearchParams(formData);
   const objData = Object.fromEntries(data);
-  // const message = formatMessage(objData);
-  // window.open("http://wa.me/6282392096228?text=" + encodeURIComponent(message));
+  const message = formatMessage(objData);
+  window.open("http://wa.me/6282392096228?text=" + encodeURIComponent(message));
 
   // minta transaction token menggunakan ajax/fetch
 
@@ -118,9 +122,11 @@ checkoutButton.addEventListener("click", async function (e) {
 // format pesan whatsapp
 const formatMessage = (obj) => {
   return `Data Customer
-  Nama: ${obj.name}
+  Nickname: ${obj.name}
   Email: ${obj.email}
-  No HP: ${obj.phone}
+  Password: ${obj.phone}
+  Request Hero: ${obj.request}
+  Catatan untuk penjoki: ${obj.catatan}
   Data Pesanan
   ${JSON.parse(obj.items).map(
     (item) => `${item.name} (${item.quantity} x ${rupiah(item.total)})\n`

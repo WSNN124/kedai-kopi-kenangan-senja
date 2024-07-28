@@ -53,28 +53,65 @@ document,
   });
 
 // Modal Box
-const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-button');
+const itemDetailModal1 = document.querySelector('#item-detail-modal1');
+const itemDetailModal2 = document.querySelector('#item-detail-modal2');
+const itemDetailModal3 = document.querySelector('#item-detail-modal3');
+const itemDetailModal4 = document.querySelector('#item-detail-modal4');
+const itemDetailModal5 = document.querySelector('#item-detail-modal5');
 
-itemDetailButtons.forEach((btn) => {
-   btn.onclick = (e) => {
-        itemDetailModal.style.display = 'flex';
-        e.preventDefault();
-    };
+const itemDetailButton1 = document.querySelector('.item-detail-button1');
+const itemDetailButton2 = document.querySelector('.item-detail-button2');
+const itemDetailButton3 = document.querySelector('.item-detail-button3');
+const itemDetailButton4 = document.querySelector('.item-detail-button4');
+const itemDetailButton5 = document.querySelector('.item-detail-button5');
 
+
+itemDetailButton1.addEventListener('click', (e) => {
+  itemDetailModal1.style.display = 'flex';
+  e.preventDefault();
+});
+
+itemDetailButton2.addEventListener('click', (e) => {
+  itemDetailModal2.style.display = 'flex';
+  e.preventDefault();
+});
+
+itemDetailButton3.addEventListener('click', (e) => {
+  itemDetailModal3.style.display = 'flex';
+  e.preventDefault();
+});
+
+itemDetailButton4.addEventListener('click', (e) => {
+  itemDetailModal4.style.display = 'flex';
+  e.preventDefault();
+});
+
+itemDetailButton5.addEventListener('click', (e) => {
+  itemDetailModal5.style.display = 'flex';
+  e.preventDefault();
 });
 
 
 
 // klik tombol close modal
-document.querySelector('.modal .close-icon').onclick = (e) => {
-    itemDetailModal.style.display = 'none';
-    e.preventDefault();
-}
+let modals = document.querySelectorAll('.modal')
+let closeIcons = document.querySelectorAll('.close-icon')
+
+closeIcons.forEach((icn) => {
+  icn.onclick = (e) => {
+    modals.forEach((modal) => {
+       modal.style.display = 'none';
+      })
+      e.preventDefault();
+   };
+
+});
 
 // klik di luar modal
 window.onclick = (e) => {
-    if (e.target === itemDetailModal) {
-        itemDetailModal.style.display = 'none';
-    }
-}
+  modals.forEach((modal) => {
+      if (e.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+};
